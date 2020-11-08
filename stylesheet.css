@@ -1,0 +1,142 @@
+body {
+    font-family: "Avenir Next";
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .header {
+    background-color: #26d0c9;
+    color: #fff;
+    height: 90px;
+  }
+  
+  .header-logo {
+    float: left;
+    font-size: 36px;
+    padding: 20px 40px;
+  }
+  
+  .header-list li {
+    float: left;
+    padding: 33px 20px;
+  }
+  
+  .main {
+    padding: 100px 80px;
+  }
+  
+  .copy-container h1 {
+    font-size: 140px;
+  }
+  
+  .copy-container h2 {
+    font-size: 60px;
+  }
+  
+  .copy-container span {
+    color: #ff4a4a;
+  }
+  
+  .contents {
+    height: auto;
+    margin-top: auto;
+    align-content: center;
+  }
+  
+  .section-title {
+    border-bottom: 2px solid #dee7ec;
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+  }
+  
+  .contents-item {
+    margin-right: 10px;
+    display: inline-flex;
+  }
+
+  @media (max-width:25%) {
+    .contents-item{
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+}
+  
+  .contents-item p {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  
+  .contact-form {
+    padding-top: 100px;
+    position: absolute;
+  }
+  
+  /* Add CSS for <input> and <textarea> tags */
+  input, textarea{
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+  }
+  
+  /* Add CSS for contact-submit */
+  .contact-submit{
+    background-color: #dee7ec;
+    color: #889eab;
+  }
+  
+  .footer {
+    background-color: #2f5167;
+    color: #fff;
+    height: 80px;
+    padding: 20px;
+    position: sticky;
+    margin: 0px;
+  }
+  
+  .footer-logo {
+    float: left;
+    font-size: 32px;
+  }
+  
+  .footer-list {
+    float: right;
+  }
+
+  .footer-list ul{
+      display: inline-flex;
+  }
+  
+  .footer-list li {
+    padding-bottom: 20px;
+    margin: 20px;
+  }
+
+  .box {
+    
+    background: white;
+    clip-path: circle(45%);
+    height: 200px;
+    transition: clip-path 1s;
+    width: 200px;
+    display: flex;
+    align-self: center;
+    opacity: 0.5;
+}
+
+
+.box:hover {
+    clip-path: circle(75%);
+    opacity: 1;
+}
+.Image1{
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
