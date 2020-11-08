@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Women Helper</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-logo">Women Helper</div>
+      <div class="header-list">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact us</li>
+        </ul>
+      </div>
+    </div>
+
+
+<div class="contents">
+  <h3 class="section-title">Services</h3>
+  <div class="contents-item">
+    <div class="box">
+      <div class="Image1">
+        <a href='#'><img src="https://iconsetc.com/icons-watermarks/flat-rounded-square-white-on-red/classica/classica_hazard-warning/classica_hazard-warning_flat-rounded-square-white-on-red_512x512.png" height="200px" width="200px">  </a>
+      </div>
+    </div>  
+    <p>Alert</p>
+  </div>
+  <div class="contents-item">
+    <div class="box">
+      <div class="Image1">
+          <img src="https://cdn6.f-cdn.com/contestentries/1423735/27562572/5bb114cb29c60_thumb900.jpg" height="200px" width="200px">            
+      </div>
+    </div>  
+    <p>Self Defence</p>
+  </div>  <div class="contents-item">
+    <div class="box">
+      <div class="Image1">
+        <a href="{{url_for 'SelfDefence.html}}">
+          <img src="https://thumbs.dreamstime.com/b/vector-flat-illustration-consultation-lawyer-s-reception-elderly-woman-concept-assistance-to-legal-matters-can-be-174617810.jpg" height="200px" width="200px">            
+        </a></div>
+    </div>  
+    <p>Legal Assistance</p>
+  </div>  <div class="contents-item">
+    <div class="box">
+      <div class="Image1">
+        <a href="{{url_for 'defence'}}">
+          <img src="https://webstockreview.net/images/clipart-world-all-around-8.png" height="200px" width="200px">            
+      </a></div>
+    </div>  
+    <p>Around You</p>
+  </div>
+</div>  <div class="contents-item">
+  <div class="box">
+    <div class="Image1">
+      <a href="{{url_for 'ngo'}}">
+        <img src="https://grid.gograph.com/woman-driver-license-eps-illustration_gg101399062.jpg" height="200px" width="200px">            
+      </a></div>
+  </div>  
+  <p>Female Driver</p>
+      <a href="{{url_for 'drive'}}">Female drivers </a>
+</div>
+</div>
+    
+    <div class="footer">
+      <div class="footer-logo">Women Helpers</div>
+      <div class="footer-list">
+        <ul>
+          <li>About</li>
+          <li>Jobs</li>
+          <li>Contact us</li>
+        </ul>
+      </div>
+    </div>
+        
+  </body>
+</html>

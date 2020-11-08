@@ -1,0 +1,89 @@
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css') }}">
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Woman safety</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="nav">
+                <ul>
+                    <li><a href="Index.html" >HOME</a></li>
+                    <li>ABOUT US</li>
+                    <li>SELF DEFENCE</li>
+                    <li>FEMALE DRIVERS</li>
+                    <li>NGOs</li>
+                    <li class="alert"><a>ALERT</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bord">
+            <div class='i-bord'></div>
+        </div>
+
+        <div class="container">
+            <div class="txt-left">
+                <div class='left'>
+                    <h1>FEMALE DRIVERS</h1>
+                    <p class="content">
+                        <h2>TRAVELLING ALONE AT NIGHT? NEED A FEMALE DRIVER?</h2>
+                        <h4 class="light">WE ARE HERE TO FIND YOU A FEMALE CAB DRIVER</h4>
+                    </p>
+
+                </div>
+
+                <div class='right'>
+                   <img src="{{ url_for('static', filename='female_cab.jpg') }}">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div section='map'>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.0987211771103!2d74.87307831448321!3d12.901373219906933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba359f81a0744bd%3A0xfeef55fa11a155b0!2sWorld%20Konkani%20Centre!5e0!3m2!1sen!2sin!4v1604828294473!5m2!1sen!2sin" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+            </div>
+
+        </div>
+    </div>
+    <div class='back'>
+        <div class="driver-container">
+            <h1>Enter details</h1>
+
+            <form method="POST">
+                <div class="tbox">
+                    <input type='text' name="name" placeholder="Name">
+                </div>
+
+                <div class="tbox">
+                    <input type='text' name="phone" placeholder="Phone number">
+                </div>
+
+                <div class="tbox">
+                    <textarea name="gaddress" placeholder="Source Address"></textarea>
+                </div>
+                <div class="tbox">
+                    <textarea name="daddress" placeholder="Destination Address"></textarea>
+                </div>
+
+                <input class='btn' type="submit">
+                </form>
+                </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
