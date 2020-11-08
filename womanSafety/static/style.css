@@ -15,12 +15,16 @@ body {
     display: inline-flex;
     margin: 10;
 }
+ .link{
+color:#252222;
+}
 
 .nav-bar ul li {
     list-style: none;
     margin: 0 20px;
     color: #b2b1b1;
     cursor: pointer;
+
 }
 
 .container {
@@ -112,7 +116,7 @@ p {
     margin-top: 1200px;
     width: 360px;
     height: 600px;
-    background: url(static/drive2.jpeg);
+    background: url({{ url_for('static', filename='drive2.jpeg') }});
     position: absolute;
     top: 50%;
     left: 50%;

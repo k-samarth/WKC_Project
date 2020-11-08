@@ -15,12 +15,13 @@
         <div class="nav-bar">
             <div class="nav">
                 <ul>
-                    <li><a href="Index.html" >HOME</a></li>
+                    <li><a class="link" href="{{url_for('homePage')}}">HOME</a></li>
                     <li>ABOUT US</li>
-                    <li>SELF DEFENCE</li>
-                    <li>FEMALE DRIVERS</li>
-                    <li>NGOs</li>
-                    <li class="alert"><a>ALERT</a></li>
+                    <li class="link"><a href="{{url_for('defence')}}">SELF DEFENCE</a></li>
+                    <li class="link"><a href="{{url_for('drive')}}">FEMALE DRIVERS</a></li>
+                    <li><a class="link" href="{{url_for('ngo')}}">NGOs</a></li>
+                    <li class="alert"><a class="link">ALERT</a></li>
+
                 </ul>
             </div>
         </div>
