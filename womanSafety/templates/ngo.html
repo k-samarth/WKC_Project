@@ -3,9 +3,10 @@
 
 <head>
     <title>Woman safety</title>
-    <link rel="stylesheet" href="style.css" />
-    <href="https://fonts.googleapis.com/css?family=Montserrat"> <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -13,12 +14,12 @@
         <div class="nav-bar">
             <div class="nav">
                 <ul>
-                    <li>HOME</li>
-                    <li>ABOUT US</li>
-                    <li>SELF DEFENCE</li>
-                    <li>FEMALE DRIVERS</li>
-                    <li>NGOs</li>
-                    <li class="alert"><a>ALERT</a></li>
+                    <li><a class="link" href="{{url_for('homePage')}}">HOME</a></li>
+                   <li>ABOUT US</li>
+                    <li class="link"><a href="{{url_for('defence')}}">SELF DEFENCE</a></li>
+                    <li class="link"><a href="{{url_for('drive')}}">FEMALE DRIVERS</a></li>
+                    <li><a class="link" href="{{url_for('ngo')}}">NGOs</a></li>
+                    <li class="alert"><a class="link">ALERT</a></li>
                 </ul>
             </div>
         </div>
@@ -34,6 +35,7 @@
                 <h3 class='text-center'>Locate your nearest ngo from the map</h3>
 
             </div>
+        </section>
     </div>
     </div>
     </section>

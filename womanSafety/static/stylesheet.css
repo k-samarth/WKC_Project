@@ -22,6 +22,9 @@ body {
     float: left;
     padding: 33px 20px;
   }
+  .header-list li a .link{
+color:#252222
+  }
   
   .main {
     padding: 100px 80px;

@@ -14,10 +14,10 @@ def ngo():
     return render_template('ngo.html')
 @app.route('/selfdefence')
 def defence():
-    return render_template('SelfDefence.html')
+    return render_template('SelfDefense.html')
 @app.route('/legal')
 def legal():
     return render_template('LegalAdvice.html')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)

@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>SelfDefense</title>
-     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
   </head>
   <body>
     <div class="header">
       <div class="header-logo">Women Helper</div>
       <div class="header-list">
         <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact us</li>
+          <li><a class="link" href="{{url_for('homePage')}}">HOME</a></li>
+                    <li>ABOUT US</li>
+                    <li class="link"><a href="{{url_for('defence')}}">SELF DEFENCE</a></li>
+                    <li class="link"><a href="{{url_for('drive')}}">FEMALE DRIVERS</a></li>
+                    <li><a class="link" href="{{url_for('ngo')}}">NGOs</a></li>
+                    <li class="alert"><a class="link">ALERT</a></li>
         </ul>
       </div>
     </div>
